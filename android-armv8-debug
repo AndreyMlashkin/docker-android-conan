@@ -1,0 +1,13 @@
+[settings]
+os=Android
+os.api_level=23
+compiler=clang
+compiler.libcxx=libc++
+compiler.version=14
+arch=armv8
+build_type=Release
+[tool_requires]
+android-ndk/r23b
+[env]
+CC=/usr/bin/clang-14
+CXX=/usr/bin/clang++-14
