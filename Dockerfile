@@ -7,4 +7,4 @@ RUN pip install conan
 COPY android-armv8-debug /root/.conan/profiles/
 COPY default /root/.conan/profiles/
 
-RUN conan install zlib/1.2.12@ --build missing
+RUN conan install zlib/1.2.12@ --build missing -pr:h android-armv8-debug -pr:b default --build missing
